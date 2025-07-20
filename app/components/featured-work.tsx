@@ -103,9 +103,9 @@ export default function FeaturedWork() {
                   {" "}
                   {/* Added relative */}
                   <Image // Use next/image
-                    src={project.image || "/placeholder.svg"}
+                    src={`${process.env.HOST_ENV}${project.image}`}
                     alt={project.title}
-                    priority
+                    // priority
                     // width={200}
                     // height={300}
                     // layout="fill" // Use fill to cover the parent div

@@ -34,7 +34,7 @@ export default function EnhancedHeroSection() {
               transition={{ duration: 0.3 }}
             >
               <Image // Use next/image
-                src="/placeholder.svg"
+                src={`${process.env.HOST_ENV}/placeholder.svg`}
                 // width={300} // Specify width
                 // height={300} // Specify height
                 alt="Your Name - Professional Avatar"
